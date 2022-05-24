@@ -2,7 +2,8 @@ package com.ing.zoo.animals;
 
 public interface Animals {
 
-    public void sayHello();
-    public void animalName(String input);
+    void sayHello();
+
+    void animalName(String input);
 
 }

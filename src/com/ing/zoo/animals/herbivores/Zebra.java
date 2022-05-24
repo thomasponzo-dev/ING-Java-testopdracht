@@ -1,32 +1,26 @@
-package com.ing.zoo.animals;
+package com.ing.zoo.animals.herbivores;
 
-import java.util.Random;
 
-public class Zebra implements Animals{
+public class Zebra implements Herbivores {
     public String name;
     public String helloText;
     public String eatText;
-    public String trick;
 
-    public Zebra()
-    {
-    }
+    public Zebra() { }
 
-    public void animalName(String input){
+    public void animalName(String input) {
         name = "marty";
         if (input.equals(name)) {
             sayHello();
         }
     }
 
-    public void sayHello()
-    {
+    public void sayHello() {
         helloText = "zebra zebra";
         System.out.println(helloText);
     }
 
-    public void eatLeaves()
-    {
+    public void eatLeaves() {
         eatText = "munch munch zank yee bra";
         System.out.println(eatText);
     }

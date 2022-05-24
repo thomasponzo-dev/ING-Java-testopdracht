@@ -1,29 +1,26 @@
-package com.ing.zoo.animals;
+package com.ing.zoo.animals.carnivores;
 
-public class Lion implements Animals{
+
+public class Lion implements Carnivores {
     public String name;
     public String helloText;
     public String eatText;
 
-    public Lion()
-    {
-    }
+    public Lion() { }
 
-    public void animalName(String input){
+    public void animalName(String input) {
         name = "henk";
         if (input.equals(name)) {
             sayHello();
         }
     }
 
-    public void sayHello()
-    {
+    public void sayHello() {
         helloText = "roooaoaaaaar";
         System.out.println(helloText);
     }
 
-    public void eatMeat()
-    {
+    public void eatMeat() {
         eatText = "nomnomnom thx mate";
         System.out.println(eatText);
     }
